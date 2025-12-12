@@ -1,0 +1,68 @@
+/* BODY & LAYOUT */
+body {
+    font-family: "Segoe UI", sans-serif;
+    margin: 0;
+    background: url(foto25.jpeg)
+    ;
+    background-color: white;
+    background-attachment: fixed;
+    transition: background 0.5s, color 0.5s;
+}
+
+body.dark {
+    background: #161c49;
+    color: #eee;
+}
+
+/* HEADER - MODIFIKASI DIMENSI */
+header {
+    background: linear-gradient(45deg, #003f7d, #0a4dd6);
+    padding: 30px 20px; /* Diperkecil dari 50px */
+    color: white;
+    text-align: center;
+    border-bottom: 10px solid #ffcc00;
+}
+
+header h1 {
+    font-size: 32px; /* Diperkecil dari 42px */
+    text-shadow: 3px 3px 10px rgb(0, 0, 0);
+}
+
+/* NAV */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 12px;
+    background: #001c5a;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    border-bottom: 5px solid #ffcc00;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+nav a:hover { color: #ffcc00; transform: scale(1.1); }
+
+/* CONTAINER */
+.container {
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.85);
+    margin: 35px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: background 0.5s, color 0.5s;
+}
+
+body.dark .container {
+    background: rgba(30, 30, 64, 0.9);
+    color: #f1eeee;
+}
+
+/*
